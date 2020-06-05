@@ -76,3 +76,12 @@ select  trunc(123.349, 2) as "r2",
         trunc(123.456, -2) as "r-2"
 from dual;
 
+
+
+/*날짜 함수*/
+--sysdate
+select sysdate
+from dual;
+
+select sysdate, first_name
+from employees;
