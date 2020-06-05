@@ -79,8 +79,7 @@ from dual;
 
 
 /*날짜 함수*/
+--sysdate
 select sysdate
 from dual;
 
-select sysdate, first_name
-from employees;
