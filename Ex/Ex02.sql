@@ -57,9 +57,6 @@ select  ltrim('     aaaa       ') || '-----',
 from dual;
 
 
-
-
--------------------------------------------------------------
 /*숫자 함수*/
 --ROUND(숫자, 출력을 원하는 자리수) 
 select  round(123.345, 2) as "r2",
@@ -115,7 +112,7 @@ select  sysdate,
 from dual;
 
 
---NVL(컬럼명, null일때값)/NVL2(컬럼명, null아닐때값, null일때 값)
+--NVL(컬럼명, null일때값), NVL2(컬럼명, null아닐때값, null일때 값)
 select  first_name, 
         commission_pct,
         nvl(commission_pct, 0),
