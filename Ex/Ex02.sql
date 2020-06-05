@@ -60,3 +60,37 @@ select  ltrim('     aaaa       ') || '-----',
         rtrim('     aaaa       ') || '-----',
         trim('     aaaa       ') || '-----'
 from dual;
+
+
+
+/*숫자 함수*/
+--ROUND(숫자, 출력을 원하는 자리수) 
+select  round(123.345, 2) as "r2",
+        round(123.956, 0) as "r0",
+        round(126.456, -1) as "r-1"
+from dual;
+
+--TRUNC(숫자, 출력을 원하는 자리수) 
+select  trunc(123.349, 2) as "r2",
+        trunc(123.956, 0) as "r0",
+        trunc(123.456, -2) as "r-2"
+from dual;
+
+/*날짜 함수*/
+--sysdate
+select sysdate
+from dual;
+
+select sysdate, first_name
+from employees;
+
+--날짜함수 – MONTH_BETWEEN(d1, d2) 
+select  sysdate, 
+        hire_date,
+        months_between(sysdate, hire_date)
+from employees
+where department_id = 110;
+
+select  LAST_DAY('20/06/06'),
+        LAST_DAY(sysdate)
+from dual;
