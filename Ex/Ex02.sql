@@ -80,14 +80,14 @@ from dual;
 
 
 --날짜함수 – MONTH_BETWEEN(d1, d2) 
-select  sysdate, 
+select  hire_date, 
         hire_date,
-        months_between(sysdate, hire_date)
+        months_between(hire_date, hire_date)
 from employees
 where department_id = 110;
 
 select  LAST_DAY('20/06/06'),
-        LAST_DAY(sysdate)
+        LAST_DAY(hire_date)
 from dual;
 
 
