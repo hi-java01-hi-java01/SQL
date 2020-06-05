@@ -13,7 +13,7 @@ from employees
 where department_id = 100;
 
 
---LOWER(컬럼명) / UPPER(컬럼명)
+--LOWER(컬럼명),  UPPER(컬럼명)
 select lower('aAaAaAaAaA'), upper('aAaAaAaAaA')
 from dual;
 
@@ -31,7 +31,7 @@ select  first_name,
 from employees
 where department_id = 100;
 
---LPAD(컬럼명, 자리수, ‘채울문자’) /  RPAD(컬럼명, 자리수, ‘채울문자’)
+--LPAD(컬럼명, 자리수, ‘채울문자’),   RPAD(컬럼명, 자리수, ‘채울문자’)
 select  first_name,
         lpad(first_name, 10, '*'),
         rpad(first_name, 10, '*')
