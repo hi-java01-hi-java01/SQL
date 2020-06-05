@@ -77,4 +77,7 @@ select  trunc(123.349, 2) as "r2",
 from dual;
 
 
-
+/*날짜 함수*/
+--sysdate
+select sysdate
+from dual;
