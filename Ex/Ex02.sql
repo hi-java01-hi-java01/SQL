@@ -1,5 +1,6 @@
 /*단일행 함수*/
 
+
 /*문자 함수*/
 --가상의 테이블
 select  initcap('aaaaaa')
