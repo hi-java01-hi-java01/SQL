@@ -76,21 +76,3 @@ select  trunc(123.349, 2) as "r2",
         trunc(123.456, -2) as "r-2"
 from dual;
 
-/*날짜 함수*/
---sysdate
-select sysdate
-from dual;
-
-select sysdate, first_name
-from employees;
-
---날짜함수 – MONTH_BETWEEN(d1, d2) 
-select  sysdate, 
-        hire_date,
-        months_between(sysdate, hire_date)
-from employees
-where department_id = 110;
-
-select  LAST_DAY('20/06/06'),
-        LAST_DAY(sysdate)
-from dual;
