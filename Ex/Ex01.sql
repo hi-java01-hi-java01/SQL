@@ -1,5 +1,4 @@
 /*select문 기본*/
-
 select * from employees;
 select * from departments;
 select employee_id, first_name, last_name from employees;
