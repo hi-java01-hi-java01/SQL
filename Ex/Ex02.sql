@@ -1,11 +1,10 @@
+select  initcap('aaaaaa')
+from dual;
+
 /*단일행 함수*/
 
 
 /*문자 함수*/
---가상의 테이블
-select  initcap('aaaaaa')
-from dual;
-
 --initcap() 첫글자만 대문자로 변경
 select  email, 
         initcap(email)
