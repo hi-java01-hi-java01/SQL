@@ -125,6 +125,3 @@ select  first_name,
         salary * nvl(commission_pct, 0),
         nvl2(commission_pct, 1234, 0)
 from employees;
-
-
-
